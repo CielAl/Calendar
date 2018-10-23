@@ -1,5 +1,11 @@
 # README #
 Module 5
+
+### Important
+* It was approved by the instructor Todd Sproull to upload the assignment contents to personal repository, but you may not
+use or adapt the implementation here into your assignment without permission from the instructor and the citation, otherwise it will
+violate the academic integrity of your department.
+
 Right click days to interact with the calendar.
 ### Memo-reference ###
 ##### The majority of the below are merely either tutorials or manuals.
