@@ -1,0 +1,267 @@
+@keyframes slideHorz {
+    from {left:50%}
+    to {left:0%}
+}
+@keyframes fade {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+#container{
+	width:70.2vw; 
+	height:60vh;
+	margin:5% auto;
+	display:table;
+	animation-duration: 0.5s;
+	animation-name: fade;
+}
+
+.week{
+	/*so that it can expand automatically*/
+	display:table;
+	float:left;
+	overflow-x:auto;
+	/*center*/
+	margin:0 auto;
+	
+}
+.day{
+	/*move from script to here*/
+	float:left;
+	display:inline-block;
+	border-style:ridge;
+	width:10vw;
+	height:18vh;
+	margin:0 auto;
+	/*does vertical align work here??*/
+	vertical-align:center;
+	/*remove the annoying ul and li dot*/
+	padding:0;
+	/* expand with event grows*/
+	overflow-y:auto;
+	overflow-x:auto;
+	
+}
+::-webkit-scrollbar {
+	display:none;
+}
+
+.controlBar{
+	display:block;
+	margin:0 auto;
+	width:100%;
+	height:5vh;
+}
+.controlBar-button{
+	width:20vw;
+}
+.controlBar-title{
+	width:30vw;
+	text-align:center;
+}
+
+.banner{
+	display:table;
+	margin:0 auto;
+}
+.bannerTitle{
+	display:inline-block;
+	float:left;
+	background-color:lavender;
+	width:10vw;
+	height:5vh;
+	text-align:center;
+	border-style:ridge;
+}
+
+
+/* here start the modals. 
+	Some of info are derived from the W3shool tutorial for css modal box,
+	such as the fixed position.
+*/
+.modal{
+	position:absolute;
+	z-index:3;
+	/*customize by js, e.g. the opacity*/
+	background-color:black;
+	background: rgba(0,0,0,0.2);
+	/*fixed position, or the background color above won`t cover the entire screen*/
+	position:fixed;
+	margin:0 auto;
+	/*entire screen*/
+	width:100%;
+	height:100%;
+	animation-name:slideHorz;
+	animation-duration:1s;
+}
+.modal-content{
+	/*offset of box to the top and center-align*/
+	margin: 10vh auto;
+	width: 40vw;
+	
+	border-radius: 5px;
+}
+.modal-close{
+	text-align:center;
+	border-radius: 5px;
+	background-color:white;
+
+}
+.modal-close:hover{
+	background-color:lightgray;
+	/*color:white;*/
+}
+.modal-body{
+	text-align:center;
+	margin:5% auto;
+	border-bottom-style:inset;
+	border-width:0.5px;
+	width:100%;
+	
+	align-content:center;
+	display:table;
+	
+}
+.modal-footer{
+	text-align:center;
+	margin:-2% auto;
+	/*border-bottom-style:inset;*/
+	border-width:0.5px;
+	width:100%;
+
+	align-content:center;
+	display:table;
+	padding-bottom:2vh;
+	
+}
+.login-input{
+    
+    margin: 3% auto;
+	width: 70%;
+	height: 5vh;
+    display: block;
+	border-radius: 2px;
+}
+
+.login-btn {
+    background-color: teal;
+	cursor: pointer;
+    margin: 0 auto;
+	margin-bottom:1%;
+    border: none;   
+    width:  70%;
+	color: lavender;
+	display:block;
+	height:5vh;
+}
+
+.login-btn:hover {
+	background-color:black;
+}
+#logBtn_tosign:hover{
+	background-color:black;
+}
+#logBtn_tosign{
+	background-color: LightCoral;
+}
+
+.event-input-button {
+    background-color: teal;
+	cursor: pointer;
+    margin: 0 auto;
+	margin-bottom:1%;
+    border: none;   
+    width:  70%;
+	color: lavender;
+	display:block;
+	height:5vh;
+}
+
+.event-input-button:hover {
+	background-color:LightCoral;
+}
+
+.event-input{
+    
+    margin: 3% auto;
+	width: 70%;
+	height: 5vh;
+    display: block;
+	border-radius: 2px;
+}
+.event-input-area{
+    
+    margin: 3% auto;
+	width: 70%;
+	height: 15vh;
+    display: block;
+	border-radius: 2px;
+}
+.modal-header h4,h3,h2,h1{
+	text-align:center;
+}
+
+
+.event:hover {
+	background-color:CadetBlue;
+}
+
+.event{
+	
+	background-color:lightcoral;
+	list-style-type: none;
+	display:table;
+	width:98%;
+	padding:0;
+	height: 30%;
+	margin:1% auto;
+	font-size:11px;
+	vertical-align: middle;
+	float:none;
+	border-style:solid;
+	border-width:1px;
+}
+
+.event-content-time {
+	display:block;
+	font-size:12px;
+	overflow-wrap: break-word;
+	border-bottom-style:dotted;
+	border-width:0.5px;
+	
+}
+.event-content-user {
+	display:block;
+	font-size:12px;
+	overflow-wrap: break-word;
+	border-bottom-style:dotted;
+	border-width:0.5px;
+}
+.event-content-title{
+	display:block;
+	font-size:12px;
+	overflow-wrap: break-word;
+	
+}
+.event-holder{
+	display:block;
+}
+
+.confirm-btn {
+    background-color: teal;
+	cursor: pointer;
+    margin: 0 auto;
+	margin-bottom:1%;
+	margin-left:3%;
+    border: none;   
+    width:  35%;
+	color: lavender;
+	display:inline-block;
+	height:5vh;
+}
+#btn-delete{
+	margin-top:3%;
+	background-color:lightcoral;
+}
+.confirm-btn:hover {
+	background-color:black;
+}
